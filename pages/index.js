@@ -15,7 +15,9 @@ export default function Home({forSale}) {
         <link rel="icon" href="/favicon.ico" />
       </Head> 
 
-     Real State Application Nextjs
+     <div className="bg-gray-400">
+     Real State Application Nextjs dd
+     </div>
     </div>
   )
 }
