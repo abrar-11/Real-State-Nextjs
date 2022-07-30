@@ -1,49 +1,45 @@
 import React from "react";
-
-const Hero = () => {
+import Image from "next/image";
+import Background from "../assets/images/background-img.jpg";
+const Hero2 = () => {
    return (
-      <div>
-         <section className="bg-gray-50 ">
-            <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-              
-               <h1 className="mb-4 text-2xl font-medium tracking-tight leading-none text-gray-700 md:text-5xl lg:text-6xl ">
-                 Time To Meet your
-               </h1>
-               <h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-emerald-700 md:text-5xl lg:text-6xl ">
-                 New Home
-               </h1>
-               <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 ">
-                  Here at Flowbite we focus on markets where technology,
-                  innovation, and capital can unlock long-term value and drive
-                  economic growth.
-               </p>
-               <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+      <div className="flex justify-between items-center flex-wrap my-20">
+         {/* Content Starts */}
+
+         <div class="sm:text-center lg:text-left w-6/12">
+            <h1 class="font-extrabold text-gray-800   text-5xl">
+               Time to Meet Your
+            </h1>
+            <h1 class=" font-extrabold text-emerald-600  text-6xl">
+               New House
+            </h1>
+            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-md sm:max-w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-0">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+               praesentium dolorem dolor iste eveniet cupiditate minima.
+               Voluptas perspiciatis nisi aliquid, repudiandae, laborum quod
+               dolor consequuntur sapiente, rem reprehenderit veniam culpa!
+            </p>
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+               <div class="mt-3 sm:mt-0 ">
                   <a
                      href="#"
-                     className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg  bg-emerald-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 "
+                     class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-200 hover:bg-emerald-300 md:py-4 md:text-sm md:px-10"
                   >
-                    Explore Properties
-                     <svg
-                        className="ml-2 -mr-1 w-5 h-5"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                     >
-                        <path
-                           fill-rule="evenodd"
-                           d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                           clip-rule="evenodd"
-                        ></path>
-                     </svg>
+                     Explore Properties
                   </a>
-
-                  
-                  
                </div>
             </div>
-         </section>
+         </div>
+
+         {/* Img Starts */}
+         <div class="lg:w-1/2">
+            <Image
+               src={Background}
+               class="h-full w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            />
+         </div>
       </div>
    );
 };
 
-export default Hero;
+export default Hero2;
