@@ -6,7 +6,8 @@ import PropertyContainer from "../components/PropertyContainer";
 
 import { baseUrl, fetchApi } from "../utils/fetchApi";
 
-export default function Home({ forSale }) {
+export default function Home({ forSale, forRent }) {
+
    return (
       <div className="">
          <Head>
@@ -17,7 +18,8 @@ export default function Home({ forSale }) {
 
          <div className="container w-11/12 mx-auto">
             <Hero />
-            <PropertyContainer properties={forSale} />
+            <PropertyContainer properties={forSale} title ='Sale'/>
+            <PropertyContainer properties={forRent} title ='Rent'/>
          </div>
       </div>
    );
@@ -27,12 +29,12 @@ export const getStaticProps = async () => {
    const forSale = await fetchApi(
       `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=9`
    );
-   // const forRent = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=9`);
+   const forRent = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=9`);
 
    return {
       props: {
          forSale: forSale?.hits,
-         // forRent : forRent?.hits,
+         forRent: forRent?.hits,
       },
    };
 };
