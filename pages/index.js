@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Hero from "../components/Hero";
 
 import PropertyContainer from "../components/PropertyContainer";
 
@@ -14,6 +15,7 @@ export default function Home({ forSale }) {
             <link rel="icon" href="/favicon.ico" />
          </Head>
 
+          <Hero/>
          <div className="container w-11/12 mx-auto">
             <PropertyContainer properties={forSale} />
          </div>

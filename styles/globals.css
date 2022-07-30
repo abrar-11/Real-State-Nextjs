@@ -7,4 +7,5 @@
 
 body{
   font-family: 'poppins';
+  @apply bg-gray-50
 }
