@@ -11,7 +11,7 @@ const Hero2 = () => {
                Time to Meet Your
             </h1>
             <h1 class=" font-extrabold text-emerald-600  text-6xl">
-               New House
+               New Home
             </h1>
             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-md sm:max-w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-0">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
@@ -36,6 +36,9 @@ const Hero2 = () => {
             <Image
                src={Background}
                class="h-full w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+               style={{
+                  clipPath: "polygon(19% 0, 100% 0%, 100% 99%, 0% 100%)",
+               }}
             />
          </div>
       </div>
