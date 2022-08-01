@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Background from "../assets/images/background-img.jpg";
-const Hero2 = () => {
+const Hero = () => {
    return (
       <div className="flex justify-between items-center flex-wrap my-20">
          {/* Content Starts */}
@@ -44,4 +44,4 @@ const Hero2 = () => {
    );
 };
 
-export default Hero2;
+export default Hero;

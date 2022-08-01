@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { MdVerifiedUser, MdOutlineBed } from "react-icons/md";
 import { BiBath } from "react-icons/bi";
+import Image from "next/image";
 const Property = ({ data }) => {
    const {
       coverPhoto,
@@ -31,10 +32,12 @@ const Property = ({ data }) => {
          <Link href={`/property/${externalID}`}>
             <div className=" shadow p-2 md:h-[22rem] w-96 max-w-sm">
                <div className=" overflow-hidden h-48">
-                  <img
+                  <Image
                      src={coverPhoto.url}
-                     alt=""
+                     alt="Property Image"
+                     width="100%" height="100%" layout="responsive" objectFit="cover"
                      className="w-full h-full   rounded-md object-cover"
+                     style={{width: "100%" , height:"100%"}}
                   />
                </div>
                <div className="my-4 px-3">
