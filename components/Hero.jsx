@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="flex justify-between items-center flex-wrap my-20">
          {/* Content Starts */}
 
-         <div className="sm:text-center lg:text-left w-6/12">
+         <div className="sm:text-center lg:text-left w-full lg:w-6/12 ">
             <h1 className="font-extrabold text-gray-800   text-5xl">
                Time to Meet Your
             </h1>
@@ -32,7 +32,7 @@ const Hero = () => {
          </div>
 
          {/* Img Starts */}
-         <div className="lg:w-1/2">
+         <div className="lg:w-1/2 hidden lg:block">
             <Image
                src={Background}
                className="h-full w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"

@@ -35,9 +35,12 @@ const Property = ({ data }) => {
                   <Image
                      src={coverPhoto.url}
                      alt="Property Image"
-                     width="100%" height="100%" layout="responsive" objectFit="cover"
+                     width="100%"
+                     height="100%"
+                     layout="responsive"
+                     objectFit="cover"
                      className="w-full h-full   rounded-md object-cover"
-                     style={{width: "100%" , height:"100%"}}
+                     style={{ width: "100%", height: "100%" }}
                   />
                </div>
                <div className="my-4 px-3">
